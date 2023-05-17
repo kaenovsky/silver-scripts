@@ -58,7 +58,7 @@ if (dayOfWeek == 0) {
 // ~~~~~~~~~~~~~ [Nesting] ~~~~~~~~~~~~~
 
 // uncomment next line to test prompt
-// const passwd = prompt("Please type your new password.");
+const passwd = prompt("Please type your new password.");
 
 // Check if input is > 6 characters
 // Check if input has no blank spaces
@@ -71,4 +71,60 @@ if (passwd.length < 6) {
     console.log("Your pass is ok!");
 }
 
-// ~~~~~~~~~~~~~ [Nesting] ~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~ [AND OR] ~~~~~~~~~~~~~
+
+// Using the same password const from line 61
+
+if (passwd.length >= 6 && passwd.indexOf(' ') === -1) {
+    console.log("Valid password :)");
+} else {
+    console.log("Not a valid password :(");
+}
+
+// Theme park example. Ticket is based on age:
+// age  0 to 5     === FREE
+// age  6 to 12    === $10
+// age  13 to 65   === $20
+// age  66 to 120  === FREE
+
+const age = 5;
+
+if ((age >= 0 && age <= 5) || (age >= 65 && age <= 110)) {
+    console.log("Free ticket");
+} else if (age >= 6 && age <= 12) {
+    console.log("$10 ticket");
+} else if (age >= 13 && age <= 65) {
+    console.log("$20 ticket");
+} else {
+    console.log("Error: age must be a number between 0 and 120");
+}
+
+// ~~~~~~~~~~~~~ [!NOT] ~~~~~~~~~~~~~
+
+!null // True
+!(0 === 0) // False
+!(3 <= 4) // False
+
+// ~~~~~~~~~~~~~ [Arrays] ~~~~~~~~~~~~~
+
+let students = []; // empty array
+let colors = ['red', 'blue', 'green']; // strings array
+let nums = [45, 52, 33, 0, 9]; // numbers array
+let mixArr = [8, 'mixx', true, null]; // data mixed array
+
+// Change the value of array element
+console.log(colors); // 1st value
+colors[2] = 'pink';  // mod value
+console.log(colors); // new value
+
+// ~~~~~~~~~~~~~ [Arrays Methods] ~~~~~~~~~~~~~
+
+// pop, push, shift, unshift
+
+let peopleInLine = ['mike', 'josh', 'li', 'hua'];
+
+console.log(peopleInLine);
+peopleInLine.push('annie');
+console.log(peopleInLine);
+peopleInLine.pop();
+console.log(peopleInLine);
