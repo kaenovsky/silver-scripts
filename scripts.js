@@ -128,3 +128,40 @@ peopleInLine.push('annie');
 console.log(peopleInLine);
 peopleInLine.pop();
 console.log(peopleInLine);
+
+// Planets example
+
+const planets = ['The Moon','Venus', 'Earth', 'Mars', 'Jupiter'];
+console.log(planets);
+planets.shift();
+planets.push('Saturn')
+planets.unshift('Mercury');
+console.log(planets);
+
+// Other methods
+
+// concat two arrays
+
+let peopleAndPlanets = peopleInLine.concat(planets);
+console.log(peopleAndPlanets);
+
+// includes method
+
+console.log(planets.includes('Saturn')); // returns true
+
+// reverse method
+
+let reversePlanets = planets.reverse();
+console.log(reversePlanets);
+
+// slice method
+
+console.log(planets.slice(2, 5));
+
+// slplice method
+
+console.log(planets.splice(2, 5));
+
+// nested arrays
+
+tttBoard = [['X', 'O', 'X'],['O', null, 'X'],['O', 'X', null]];
