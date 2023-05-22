@@ -164,4 +164,74 @@ console.log(planets.splice(2, 5));
 
 // nested arrays
 
-tttBoard = [['X', 'O', 'X'],['O', null, 'X'],['O', 'X', null]];
+tttBoard = [
+    ['X', 'O', 'X'],
+    ['O', null, 'X'],
+    ['O', 'X', null]
+];
+
+// Objects
+
+const personObj = {name: 'Li', lastName: 'Hua'};
+
+// Two ways of retrieving the object's properties
+
+console.log(personObj['lastName']); // Hua
+console.log(personObj.lastName); // Hua
+
+// Add new key value pairs to object
+// Both syntax works
+
+console.log(personObj);
+personObj.age = 28;
+console.log(personObj);
+personObj['isMarried'] = true;
+console.log(personObj);
+
+// Array + Objects
+// Sometimes it makes sense to use an array within an object
+// Sometimes it's better the other way around
+
+const shoppingCart = [
+    {
+        product: 'Jenga Classic',
+        price: 6.99,
+        quantity: 3,
+
+    },
+    {
+        product: 'Chess',
+        price: 10.50,
+        quantity: 4,
+
+    },
+    {
+        product: 'TEG',
+        price: 5.99,
+        quantity: 2,
+
+    }
+]
+
+console.log(shoppingCart); // Array of Objects
+
+const student = {
+    firstName: 'Luke',
+    lastName: 'Beetz',
+    languages: ['Python', 'C++', 'Go'],
+    exams: {
+        midterm: 92,
+        final: 89
+    }
+}
+
+console.log(student); // Object with array and other object 
+
+console.log(shoppingCart[1].quantity); // 4
+console.log(student.languages[1]); // C++
+
+// For loop
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
