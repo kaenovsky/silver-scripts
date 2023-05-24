@@ -235,3 +235,79 @@ console.log(student.languages[1]); // C++
 for (let i = 0; i <= 10; i++) {
     console.log(i);
 }
+
+// For loop exercise
+
+for (let i = 25; i >= 0; i -= 5) {
+    console.log(i);
+}
+
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+
+// For loop through an array of animals
+
+let animals = ['lion', 'octopus', 'zebra', 'wolf', 'cat', 'snake'];
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(i + 1, animals[i]);
+}
+
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+
+// go the other way around
+
+for (let i = animals.length - 1; i >= 0; i--) {
+    console.log(i + 1, animals[i]);
+}
+
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+
+for (let i = 0; i < people.length; i++) {
+    console.log(people[i].toUpperCase());
+}
+
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+
+// Nested arrays
+
+const seatingChart = [
+    ['Tom', 'Zeke', 'Yuko'],
+    ['Ami', 'Lakshmi', 'Erin'],
+    ['Lua', 'Ho', 'Pablo']
+];
+
+// find each name in nested arrays
+
+for (let i = 0; i < seatingChart.length; i++) {
+    let row = seatingChart[i];
+    for (let j = 0; j < row.length; j++) {
+        console.log(row[j]);
+    }
+}
+
+// while loop -useful when we don't know how many iterations the loop will take-
+
+const SECRET = 'Calavera';
+
+let guess = prompt('type your secret pass: ');
+
+while (guess !== SECRET) {
+    guess = prompt('wrong pass! Type your secret pass again:');        
+}
+
+console.log('You nailed it :) the pass is ' + guess);
+
+// break out of a while loop
+
+let inputUser = prompt('say something!');
+
+while (true) {
+    inputUser = prompt(inputUser);
+    if (inputUser.toLowerCase() === 'stop copying me') {
+        break;
+    }
+}
+
+console.log('Ok you win!');
