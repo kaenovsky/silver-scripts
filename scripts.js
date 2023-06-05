@@ -311,3 +311,9 @@ while (true) {
 }
 
 console.log('Ok you win!');
+
+// for of...iterable
+
+for (animal of animals) {
+    console.log('The animal is ' + animal);
+}
