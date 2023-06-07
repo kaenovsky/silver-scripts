@@ -106,3 +106,15 @@ function makeBetween(min, max) {
 const isChild = makeBetween(0, 18);
 const isAdult = makeBetween(19, 65);
 const isSenior = makeBetween(65, 120);
+
+// Creating our own method
+
+const myMath = {
+    PI: 3.141559,
+    square: function(num) {
+        return num * num;
+    },
+    cube: function(num) {
+        return num ** 3;
+    }
+}
