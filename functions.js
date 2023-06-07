@@ -81,3 +81,28 @@ function returnDay(day) {
         return days[day - 1];
     }    
 }
+
+// Function call inside a function
+
+function callTenTimes(func) {
+    for (let i = 0; i < 10; i++) {
+        func();
+    }
+}
+
+function rollDie() {
+    randomNum = Math.floor(Math.random() * 6) + 1;
+    console.log(randomNum);
+}
+
+// Factory function
+
+function makeBetween(min, max) {
+    return function(num) {
+        return num >= min && num <= max;
+    }
+}
+
+const isChild = makeBetween(0, 18);
+const isAdult = makeBetween(19, 65);
+const isSenior = makeBetween(65, 120);
