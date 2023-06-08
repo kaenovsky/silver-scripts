@@ -350,6 +350,6 @@ console.log(allPets);
 
 function raceResults(gold, silver, ...everyone) {
     console.log(`the gold medal goes to: ${gold}`);
-    console.log(`the silver medal goes to ${silver}`);
-    console.log(`Thanks everyone who registered ${everyone}`);
+    console.log(`the silver medal goes to: ${silver}`);
+    console.log(`Thanks everyone who registered: ${everyone}`);
 }
