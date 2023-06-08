@@ -261,12 +261,12 @@ console.log('this message goes fast as well');
 const id = setInterval(() => {
     console.log('this message is going to repeat a few times');
     console.log(Math.random());
-}, 1000);
+}, 700);
 
 setTimeout(() => {
     console.log('now the interval will end');
     clearInterval(id);
-}, 12000);
+}, 1000);
 
 // filter
 
@@ -280,3 +280,61 @@ console.log('~~~~~~~~~~~~~~~~~');
 
 console.log('the movies with bad score are these: ')
 console.log(badMovies);
+
+console.log('~~~~~~~ good movie titles ~~~~~~~');
+const goodTitles = goodMovies.map(m => (m.title));
+console.log(goodTitles);
+
+// Code exercise
+
+userNamesDemo = ['Mike', 'Tom', 'Hank', 'Lee', 'Constantine', 'Jeremiah', 'Christopher'];
+
+function validUserNames(usernames) {
+    return usernames.filter(name => (name.length < 10));
+  }
+
+// every and some
+
+const longNames = userNamesDemo.every(n => (n.length < 4));
+console.log(`Is every name shorter than 4? Response: that's ${longNames}.`);
+
+const shortNames = userNamesDemo.some(n => (n.length < 4));
+console.log(`Is any of the names shorter than 4? Response: that's ${shortNames}.`);
+
+// code quiz some/every
+
+function allEvens(nums) {
+    return nums.every(n => (n % 2 === 0));
+}
+
+// reduce method
+
+// find lower score movie
+
+const bestScoreMovie = movies.reduce((maxScore, currentMovie) => {
+    if(currentMovie.score > maxScore.score) {
+        return currentMovie;
+    } else {
+        return maxScore;
+    }
+});
+
+// default params
+
+function multiplyWithDefault(x, y = 1) {
+    return x * y;
+}
+
+// same idea with die example
+
+function rollCoolerDie(sides = 6) {
+    // default 6 sides
+    let die = Math.floor(Math.random() * sides) + 1;
+    console.log(die);
+}
+
+// spread
+
+const coolNumbers = [2, 5, 6, 8, 32, 355, 72, 21, 58, 9];
+console.log('The max number of coolNubers Array is: ' + Math.max(...coolNumbers));
+console.log('The min number of coolNubers Array is: ' + Math.min(...coolNumbers));
