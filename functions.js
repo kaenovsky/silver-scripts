@@ -338,3 +338,18 @@ function rollCoolerDie(sides = 6) {
 const coolNumbers = [2, 5, 6, 8, 32, 355, 72, 21, 58, 9];
 console.log('The max number of coolNubers Array is: ' + Math.max(...coolNumbers));
 console.log('The min number of coolNubers Array is: ' + Math.min(...coolNumbers));
+
+// spread with iterable elements (such as arrays)
+
+const dogs = ['vainilla', 'lola', 'titan'];
+const cats = ['leo', 'nosey', 'hasan'];
+const allPets = [...dogs, ...cats];
+console.log(allPets);
+
+// spread within functions to capture all params
+
+function raceResults(gold, silver, ...everyone) {
+    console.log(`the gold medal goes to: ${gold}`);
+    console.log(`the silver medal goes to ${silver}`);
+    console.log(`Thanks everyone who registered ${everyone}`);
+}
