@@ -1,7 +1,6 @@
 // ~~~~~~~~~~~~~ [str template literals] ~~~~~~~~~~~~~
 
 // Template literals are strings that allow embedded expressions
-// which will be evaluated and the turned into a resultin string
 
 let myTemplateLiteral = `I counted ${3 + 4} sheep`;
 

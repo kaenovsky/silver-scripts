@@ -204,6 +204,22 @@ const movies = [
     {
         title: 'City of God',
         score: 88
+    },
+    {
+        title: 'Home Alone',
+        score: 67
+    },
+    {
+        title: 'The room',
+        score: 20
+    },
+    {
+        title: 'Kill Bill',
+        score: 77
+    },
+    {
+        title: 'Fast & Furious 7',
+        score: 56
     }
 ]
 
@@ -231,3 +247,36 @@ const rollOtherDie = () => {
 
 const isEven = (x) => (x % 2 === 0);
 const multiply = (x,y) => (x * y);
+
+// setTimeout() and setInterval()
+
+console.log('Hey this is so fast');
+
+setTimeout(() => {
+    console.log('hey, u still there?');
+}, 3000);
+
+console.log('this message goes fast as well');
+
+const id = setInterval(() => {
+    console.log('this message is going to repeat a few times');
+    console.log(Math.random());
+}, 1000);
+
+setTimeout(() => {
+    console.log('now the interval will end');
+    clearInterval(id);
+}, 12000);
+
+// filter
+
+const goodMovies = movies.filter(m => (m.score > 75));
+const badMovies  = movies.filter(m => (m.score < 75));
+
+console.log('the movies with good score are these: ')
+console.log(goodMovies);
+
+console.log('~~~~~~~~~~~~~~~~~');
+
+console.log('the movies with bad score are these: ')
+console.log(badMovies);
