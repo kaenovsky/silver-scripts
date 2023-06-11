@@ -353,3 +353,26 @@ function raceResults(gold, silver, ...everyone) {
     console.log(`the silver medal goes to: ${silver}`);
     console.log(`Thanks everyone who registered: ${everyone}`);
 }
+
+// array destructuring
+
+const raceResultsArr = ['Eliud Kipchoge', 'Feyisa Lelisa', 'Galen Rupp', 'Phil Allen', 'Mark Garfield', 'Adam Holmes'];
+
+const [gold, silver, bronze, ...everyoneElse] = raceResultsArr;
+
+// object destructuring
+
+const runner = {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+    title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+const { first, last, country } = runner;
+
+// renaming variables from object
+
+const { country: nationality } = runner;
+
+console.log(nationality);
