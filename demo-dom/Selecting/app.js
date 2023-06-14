@@ -16,3 +16,12 @@ const links = document.querySelectorAll('p a');
 for (let link of links) {
     console.log(link.href)
 }
+
+// Code quiz forest img (markup not in this repo)
+
+const cont = document.querySelector('#container');
+cont.style.textAlign = "center";
+
+const myImg = document.querySelector('img');
+myImg.style.width = "150px";
+myImg.style.borderRadius = "50%";
