@@ -399,6 +399,6 @@ const ratedMovies = movies.map(({ title, score, year }) => {
 
 console.log('Now we will see the rated movies list:');
 
-for (m of ratedMovies) {
+for (let m of ratedMovies) {
     console.log(m);
 }
