@@ -195,30 +195,37 @@ console.log(doubles);
 const movies = [
     {
         title: 'The Matrix',
+        year: 1999,
         score: 96
     },
     {
         title: 'V for Vendetta',
+        year: 2005,
         score: 79
     },
     {
         title: 'City of God',
+        year: 2002,
         score: 88
     },
     {
         title: 'Home Alone',
+        year: 1990,
         score: 67
     },
     {
         title: 'The room',
+        year: 2003,
         score: 20
     },
     {
         title: 'Kill Bill',
+        year: 2003,
         score: 77
     },
     {
         title: 'Fast & Furious 7',
+        year: 2015,
         score: 56
     }
 ]
@@ -376,3 +383,22 @@ const { first, last, country } = runner;
 const { country: nationality } = runner;
 
 console.log(nationality);
+
+// params destructuring 
+// use with runner object --> fullName(runner);
+
+const fullName = ({first, last}) => {
+    return `${first} ${last}`
+}
+
+movies.filter(({ score }) => score >= 90);
+
+const ratedMovies = movies.map(({ title, score, year }) => {
+    return `${title} (${year}) is rated ${score}`
+})
+
+console.log('Now we will see the rated movies list:');
+
+for (m of ratedMovies) {
+    console.log(m);
+}
