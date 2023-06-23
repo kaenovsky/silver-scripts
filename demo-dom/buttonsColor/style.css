@@ -1,0 +1,10 @@
+.btn {
+    width: 4rem;
+    height: 4rem;
+    margin: .3rem;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
