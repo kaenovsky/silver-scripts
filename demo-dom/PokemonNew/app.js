@@ -21,5 +21,11 @@ for (let i = 1; i <= 151; i++) {
 
     // add style to div element
     div.classList.add('pokemon');
-    
+        
+}
+
+// onclick
+const poke = document.querySelector('.pokemon');
+poke.onclick = () => {
+    console.log('bulbasauuuur :3');
 }
