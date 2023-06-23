@@ -29,3 +29,8 @@ const poke = document.querySelector('.pokemon');
 poke.onclick = () => {
     console.log('bulbasauuuur :3');
 }
+
+// adEventListener
+poke.addEventListener('mouseup', function() {
+    console.log('this will show when you release the click!');
+})
