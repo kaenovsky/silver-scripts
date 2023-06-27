@@ -8,4 +8,5 @@ form.addEventListener('submit', (e) => {
     const newValue = document.createElement('li');
     newValue.innerText = valueOfInput;
     list.append(newValue);
+    input.value = '';
 })
