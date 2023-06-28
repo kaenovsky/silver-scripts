@@ -52,3 +52,33 @@ input.addEventListener('input', (e) => {
 //         h1.innerText = 'Enter Your Username';
 //     }
 // })
+
+// stop propagation (Event bubbling)
+
+const div = document.querySelector('#container');
+const btn = document.querySelector('#btn');
+
+// when btn is clicked, colorize the div
+
+// make random color
+
+let rgbColors = [255, 255, 255];
+
+const randomColor = () => {
+    for (let i = 0; i < rgbColors.length; i++) {
+        let newRanCol = Math.floor((Math.random() * 255) +1);
+        rgbColors[i] = newRanCol;
+    }
+    return `rgb(${rgbColors[0]}, ${rgbColors[1]}, ${rgbColors[2]})`;
+}
+
+btn.addEventListener('click', (e) => {
+    div.style.backgroundColor = randomColor();
+    e.stopPropagation(); // comment this to hide div
+})
+
+// hide element - this should not run because of stopPropagation()
+
+div.addEventListener('click', () => {
+    div.classList.toggle('hide');
+})
