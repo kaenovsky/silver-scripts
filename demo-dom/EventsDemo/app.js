@@ -26,3 +26,29 @@ window.addEventListener('keydown', (e) => {
             break;
     }
 })
+
+// change event
+const input = document.querySelector('input');
+
+input.addEventListener('change', (e) => {
+    console.log('something has changed!');
+})
+
+// change h1 when we type (input event)
+const h1 = document.querySelector('h1');
+
+input.addEventListener('input', (e) => {
+    h1.innerText = input.value;
+})
+
+// input event code quiz
+
+// const input = document.querySelector('#username');
+// const h1 = document.querySelector('h1');
+
+// input.addEventListener('input', (e) => {
+//     h1.innerText = 'Welcome, ' + input.value;
+//     if (input.value == '') {
+//         h1.innerText = 'Enter Your Username';
+//     }
+// })
