@@ -10,14 +10,20 @@ const btn2 = document.querySelector('#player2');
 const reset = document.querySelector('#reset');
 const playingTo = document.querySelector('#playingto');
 
+// reset logic
+
+function resetScore() {
+    pointsP1 = 0;
+    pointsP2 = 0;
+    score1.innerHTML = pointsP1;
+    score2.innerHTML = pointsP2;
+    score1.style.color = 'unset';
+    score2.style.color = 'unset';
+}
+
 // score logic
 
 let maxScore = 5;
-
-playingTo.addEventListener('change', (e) => {
-    maxScore = e.target.value;
-    console.log('max score is now ----> ' + maxScore);
-})
 
 btn1.addEventListener('click', () => {
     if(pointsP1 < maxScore && pointsP2 < maxScore) {
@@ -44,11 +50,11 @@ btn2.addEventListener('click', () => {
 })
 
 reset.addEventListener('click', () => {
-    pointsP1 = 0;
-    pointsP2 = 0;
-    score1.innerHTML = pointsP1;
-    score2.innerHTML = pointsP2;
-    score1.style.color = 'unset';
-    score2.style.color = 'unset';
+    resetScore();    
 })
 
+playingTo.addEventListener('change', (e) => {
+    maxScore = e.target.value;
+    resetScore(); 
+    console.log('max score is now ----> ' + maxScore);
+})
