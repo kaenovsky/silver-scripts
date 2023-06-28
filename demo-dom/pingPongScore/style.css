@@ -1,0 +1,60 @@
+.container {
+    max-width: 20rem;
+    margin: 0 auto;
+    border: 1px solid #33333342;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.275)
+}
+
+.main-app, .title, .buttons {
+    padding: .5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title p, .main-app h2 {
+    margin: 0;
+}
+
+.title {
+    border-bottom: 1px solid #33333342;
+}
+
+.selectTop {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: .3rem;
+}
+
+.selectTop select {
+    margin-left: .5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.buttons button {
+    width: 33%;
+    margin: .2rem;
+    border-style: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: .3rem .4rem;
+}
+
+#player1 {
+    background-color: #44b372;
+}
+
+#player2 {
+    background-color: #416bd8;
+}
+
+#reset {
+    background-color: #d84545;
+}

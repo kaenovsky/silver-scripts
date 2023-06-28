@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Score Keeper</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div>
+                <img src="img/pingpong.png" alt="ping pong net and paddles">
+            </div>
+            <div class="title">
+                <p>Ping Pong Score Keeper</p>
+            </div>
+            <div class="main-app">
+                <h2><span id="score1">0</span> to <span id="score2">0</span></h2>
+                <p>Use the buttons below to keep score</p>
+                <div class="selectTop">
+                    <p>Playing to</p>
+                    <select name="playingto" id="playingto">
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                        <option value="11">11</option>
+                        <option value="21">21</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="player1">+1 Player one</button>
+                <button id="player2">+1 Player two</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
