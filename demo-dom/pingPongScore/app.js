@@ -28,10 +28,12 @@ let maxScore = 5;
 btn1.addEventListener('click', () => {
     if(pointsP1 < maxScore && pointsP2 < maxScore) {
         pointsP1 = pointsP1 + 1;
+        console.log(`+1 point for player one, score is now p1 = ${pointsP1} and p2 = ${pointsP2}`);
         score1.innerHTML = pointsP1;
     }
 
     if (pointsP1 == maxScore) {
+        console.log(`Player one won. Final score is p1 = ${pointsP1} and p2 = ${pointsP2}`);
         score1.style.color = 'green';
         score2.style.color = 'red';
     }
@@ -40,10 +42,12 @@ btn1.addEventListener('click', () => {
 btn2.addEventListener('click', () => {
     if(pointsP1 < maxScore && pointsP2 < maxScore) {
         pointsP2 = pointsP2 + 1;
+        console.log(`+1 point for player two, score is now p1 = ${pointsP1} and p2 = ${pointsP2}`);
         score2.innerHTML = pointsP2;
     }
 
     if (pointsP2 == maxScore) {
+        console.log(`Player two won. Final score is p1 = ${pointsP1} and p2 = ${pointsP2}`);
         score2.style.color = 'red';
         score1.style.color = 'green';
     }
