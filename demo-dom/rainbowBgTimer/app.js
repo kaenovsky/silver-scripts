@@ -19,6 +19,7 @@ const id = setInterval(() => {
     h1.classList.add('shadow');
     p.classList.add('shadow');
     if (i === 7) {
+        h1.innerText = 'The end :)'
         p.innerText = 'The last color is called ' + colors[i - 1];
         console.log('now the interval will end');        
         clearInterval(id);
