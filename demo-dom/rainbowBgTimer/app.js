@@ -14,14 +14,19 @@ const printColor = function() {
 }
 
 const id = setInterval(() => {
-    console.log('this message is going to repeat a few times');
+    
+    if (i === 0) {
+        h1.classList.add('shadow');
+        p.classList.add('shadow');
+    }
+
     printColor();
-    h1.classList.add('shadow');
-    p.classList.add('shadow');
+
     if (i === 7) {
         h1.innerText = 'The end :)'
         p.innerText = 'The last color is called ' + colors[i - 1];
         console.log('now the interval will end');        
         clearInterval(id);
     }
-}, 2000);
+
+}, 3000);
