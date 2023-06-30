@@ -7,6 +7,12 @@ h1 {
     font-size: 1.2rem;
 }
 
+.catbox {
+    max-width: 30rem;
+    margin: 10vh auto;
+    padding: .5rem;
+}
+
 img {
     max-width: 20rem;
 }
