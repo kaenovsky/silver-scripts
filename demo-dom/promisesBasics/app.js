@@ -3,7 +3,7 @@ const fakeRequest = (url) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (rand < 0.7) {
-                resolve('Your fake data goes here');
+                resolve('OK! Your fake data goes here');
             } else {
                 reject('Error in request!');
             }
@@ -18,3 +18,19 @@ fakeRequest('/dogs/1')
     .catch((err) => {
         console.log(err);
     })
+
+async function makeTwoRequest() {
+
+    try {
+        let data1 = await fakeRequest('cats.com/api/demo');
+        console.log(data1);
+        let data2 = await fakeRequest('cats.com/api/demo2');
+        console.log(data2);
+    }
+    catch (e) {
+        console.log('There seems to be an error: ', e);
+    }
+}
+
+// calling the function
+makeTwoRequest();
