@@ -7,11 +7,18 @@ body {
 h1 {
     background-color: #3a3a3a;
     color: azure;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 20rem;
     margin: 1rem auto;
 }
 
 img {
     max-width: 20rem;
+}
+
+.square {
+    margin: 0 auto;
+    background-color: black;
+    width: 20rem;
+    height: 20rem;
 }
