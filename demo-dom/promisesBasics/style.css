@@ -1,0 +1,17 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    transition: 1s background-color;
+}
+
+h1 {
+    background-color: #3a3a3a;
+    color: azure;
+    font-size: 1.5rem;
+    max-width: 20rem;
+    margin: 1rem auto;
+}
+
+img {
+    max-width: 20rem;
+}
