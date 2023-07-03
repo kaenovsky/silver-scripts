@@ -20,9 +20,9 @@ const getShows = async (search) => {
         const res = await axios.get(url);
         const shows = res.data;
         for (s of shows) {
-            console.log(s.show.image.medium);
             const img = document.createElement('IMG');
             img.src = s.show.image.medium;
+            img.title = s.show.name;
             container.append(img);
     }        
     } catch (error) {
