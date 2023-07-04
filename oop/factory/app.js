@@ -17,3 +17,6 @@ function makeColor(r, g, b) {
 const firstColor = makeColor(32, 255, 150);
 console.log(firstColor.rgb());
 console.log(firstColor.hex());
+
+document.querySelector('h1').style.color = makeColor(255, 0, 190).hex();
+document.querySelector('p').style.color = makeColor(200, 20, 43).hex();
