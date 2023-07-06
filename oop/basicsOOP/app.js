@@ -57,17 +57,23 @@ class Colorfull {
         this.b = b;
         this.name = name;
     }
+    innerRgb() {
+        const { r, g, b } = this;
+        return `${r}, ${g}, ${b}`;
+    }
     rgb() {
-        const { r, g, b } = this; 
-        return `rgb(${r}, ${g}, ${b})`; 
+        return `rgb(${this.innerRgb()})`; 
     }
     hex() {
         const { r, g, b } = this;
         return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+    }
+    rgba(a=1.0) {
+        return `rgba(${this.innerRgb()}, ${a})`;
     }
 }
 
 const palid = new Colorfull(255, 252, 100, 'palid yellow submarine');
 
 document.querySelector('#square').style.backgroundColor = palid.rgb();
-console.log(`the color ${palid.name} is ${palid.hex()} in hexadecimal and ${palid.rgb()} in rgb format`);
+console.log(`the color ${palid.name} is ${palid.hex()} in hexadecimal and ${palid.innerRgb()} in rgb format`);
