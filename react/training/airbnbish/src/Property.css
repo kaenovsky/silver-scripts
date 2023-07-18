@@ -1,0 +1,17 @@
+.property {
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 20rem;
+}
+
+/* limit characters in line */
+
+h1 {
+    display: block;
+    width: 20rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
