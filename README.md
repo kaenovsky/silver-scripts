@@ -8,7 +8,7 @@ Part of Colt Steele's [Web Dev Bootcamp](https://www.udemy.com/course/the-web-de
 
 ---
 
-Some of the demo scripts running on Github Page:
+Some of the demo js scripts running on Github Page:
 
 - https://kaenovsky.github.io/silver-scripts/demo-dom/pingPongScore/
 - https://kaenovsky.github.io/silver-scripts/demo-dom/catFact/
@@ -17,3 +17,8 @@ Some of the demo scripts running on Github Page:
 - https://kaenovsky.github.io/silver-scripts/demo-dom/rainbowBgTimer/
 - https://kaenovsky.github.io/silver-scripts/demo-dom/PokemonNew/index.html
 - https://kaenovsky.github.io/silver-scripts/demo-dom/Rainbow/
+
+Some of the demo react components running on Vercel:
+
+- https://slotmachine-chi.vercel.app/
+- https://airbnbish.vercel.app/
