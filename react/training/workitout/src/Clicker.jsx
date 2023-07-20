@@ -1,3 +1,5 @@
+import "./Clicker.css";
+
 export default function Clicker({buttonText, message}) {   
     
     const handleClick = function click() {
@@ -5,6 +7,6 @@ export default function Clicker({buttonText, message}) {
     }
     
     return (
-        <button onClick={handleClick}>{buttonText}</button>
+        <button onClick={handleClick} className="Clicker">{buttonText}</button>
     );
 }

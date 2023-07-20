@@ -1,7 +1,10 @@
 .App {
   text-align: center;
   max-width: 33rem;
-  display: flex;
-  flex-flow: row wrap;
   margin: 0 auto;
+}
+
+.slots {
+  display: flex;
+  flex-flow: row wrap;  
 }
