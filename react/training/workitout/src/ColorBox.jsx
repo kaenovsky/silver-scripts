@@ -3,11 +3,15 @@ import { useState } from "react";
 
 export default function ColorBox({ colors }) {
 
-    const randomNum = () => Math.floor(Math.random() * 15) + 1;
+    const randomNum = () => Math.floor(Math.random() * colors.length);
     const [color, setColor] = useState(colors[randomNum()]);
     const changeColor = () => setColor(colors[randomNum()]);
 
     return (
-        <div onClick= {changeColor} style={{backgroundColor: `${color}`}} className="box"></div>
+        <div 
+            onClick= {changeColor} 
+            style={{backgroundColor: `${color}`}} 
+            className="ColorBox">
+        </div>
     );
 }
