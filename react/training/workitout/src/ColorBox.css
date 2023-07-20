@@ -1,0 +1,6 @@
+.box {
+    width: 7rem;
+    height: 7rem;
+    transition: 1s background-color;
+    cursor: pointer;
+}
