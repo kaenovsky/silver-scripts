@@ -10,7 +10,7 @@ export default function ColorBox({ colors }) {
     return (
         <div 
             onClick= {changeColor} 
-            style={{backgroundColor: `${color}`}} 
+            style={{backgroundColor: color}} 
             className="ColorBox">
         </div>
     );

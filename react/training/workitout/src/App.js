@@ -4,6 +4,7 @@ import SlotMachine from './Slot';
 import Clicker from './Clicker';
 import Toggler from './Toggler';
 import ColorBoxes from './ColorBoxes';
+import ScoreKeeper from './ScoreKeeper';
 
 const colors = [
   "#E53935",
@@ -47,6 +48,8 @@ function App() {
         <Clicker message="stooop!" buttonText="Dont Click!" />
         <h2>Boxes that changes color (props + useState)</h2>
         <ColorBoxes colors={colors} />
+        <h2>Score keeper with useState</h2>
+        <ScoreKeeper />
       </section>
     </div>
   );
