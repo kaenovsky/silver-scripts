@@ -6,6 +6,7 @@ import Toggler from './Toggler';
 import ColorBoxes from './ColorBoxes';
 import ScoreKeeper from './ScoreKeeper';
 import EmojiClicker from './EmojiClicker';
+import MultiScores from './MultiScores';
 
 const colors = [
   "#E53935",
@@ -53,6 +54,8 @@ function App() {
         <ScoreKeeper />
         <h2>Add emojis to Array with useState</h2>
         <EmojiClicker />
+        <h2>A new Score Keeper for multiple players</h2>
+        <MultiScores numPlayers={20} target={3} />
       </section>
     </div>
   );

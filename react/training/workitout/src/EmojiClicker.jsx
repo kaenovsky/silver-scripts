@@ -25,7 +25,9 @@ export default function EmojiClicker() {
                 emoji: "💜"
             }                    
         });
+
         setEmojis(allHearts);
+        
     }
 
     return (
