@@ -7,6 +7,7 @@ import ColorBoxes from './ColorBoxes';
 import ScoreKeeper from './ScoreKeeper';
 import EmojiClicker from './EmojiClicker';
 import MultiScores from './MultiScores';
+import ClickerBoxGrid from './ClickerBoxGrid';
 
 const colors = [
   "#E53935",
@@ -56,6 +57,8 @@ function App() {
         <EmojiClicker />
         <h2>A new Score Keeper for multiple players</h2>
         <MultiScores numPlayers={20} target={3} />
+        <h2>Passing functions as Props</h2>
+        <ClickerBoxGrid />
       </section>
     </div>
   );

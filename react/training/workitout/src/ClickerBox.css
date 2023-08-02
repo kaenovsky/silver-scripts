@@ -1,0 +1,7 @@
+.ClickerBox {
+    width: 100px;
+    height: 100px;
+    margin: .5rem;
+    display: inline-block;
+    transition: background-color 1s;
+}
